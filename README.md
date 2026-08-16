@@ -1,4 +1,4 @@
-# RailSAFE AI — GIS Railway Obstacle Detection System
+# GIS Railway Obstacle Detection System
 
 An AI-assisted railway safety and GIS simulation platform. RailSAFE AI simulates a high-speed train journey along the **Paris → Monaco** corridor (980 km, TGV-style speeds up to 300 km/h), detects track obstacles with a PyTorch neural network, fuses simulated level-crossing sensors (camera + IR + occupancy), and streams everything to an operator dashboard with live GIS maps, evidence logging, and exportable reports.
 
