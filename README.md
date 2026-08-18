@@ -1,8 +1,11 @@
 **A Railway Obstacle Detection System**
+
 An AI-assisted railway safety and GIS simulation platform, that simulates a high-speed train journey along e.g., Paris → Monaco corridor (980 km, TGV-style speeds up to 300 km/h), detects track obstacles with a PyTorch neural network, fuses simulated level-crossing sensors (camera + IR + occupancy), and streams everything to an operator dashboard with live GIS maps, evidence logging, and exportable reports.
 The platform also demonstrates two multi-train architectures: a client–server network for real-time obstacle alert broadcasting between trains, and federated learning so trains can collaboratively improve the shared obstacle-detection model without exchanging raw sensor data.
 
+
 **Key Features**
+
 AI obstacle detection — a real-time PyTorch MLP classifier (8 → 64 → 128 → 256 → 128 → 64 → 6) with a sigmoid confidence head that classifies sensor readings into six classes: No Obstacle, Fallen Rock, Debris, Animal, Construction Equipment, Fallen Tree.
 Journey simulation — segment-by-segment Paris→Monaco run with realistic speed profiles, temperature variation, probabilistic obstacles, and emergency escalation policies.
 sensor fusion — a software prototype that fuses camera, infrared, and track-occupancy signals at road–rail intersections into a single incident verdict.
